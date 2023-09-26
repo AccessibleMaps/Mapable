@@ -1,0 +1,46 @@
+{
+  "name": "accmaps-mobile-interaction",
+  "version": "1.0.0",
+  "description": "The project Accessible Maps aims to make indoor mobility more accessible for people with disabilities in the occupational context.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "build-start": "npx webpack && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hrz.tu-chemnitz.de:s3594077--tu-dresden.de/accmaps-mobile-interaction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bootstrap": "^5.1.6",
+    "@types/leaflet": "^1.7.4",
+    "@types/leaflet-markercluster": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "bootstrap": "^5.1.2",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.31.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "geojson-bounding-box": "^0.2.0",
+    "geojson-polygon-center": "^0.0.0",
+    "leaflet": "^1.7.1",
+    "leaflet.markercluster": "^1.5.3",
+    "node-localstorage": "^2.2.1",
+    "node-sass": "^6.0.1",
+    "node-xml-stream": "^1.0.2",
+    "osmtogeojson": "^3.0.0-beta.4",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

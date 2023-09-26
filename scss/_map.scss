@@ -1,0 +1,12 @@
+@import "../node_modules/leaflet/dist/leaflet.css";
+
+$mapBottom: 222px;
+
+#map {
+  position: absolute;
+  top: 55px;
+  bottom: $mapBottom;
+  left: 0;
+  right: 0;
+  z-index: 5
+}

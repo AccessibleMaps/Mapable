@@ -1,0 +1,188 @@
+@import "bootstrap_imports";
+@import "map";
+
+$legendWidth: 150px;
+
+html, body{
+  overflow-x: hidden;
+}
+
+nav {
+  z-index: 99;
+}
+
+@media screen and (max-width: 1469px){
+  nav{
+    height: 107px;
+  }
+}
+
+#legendWrapper {
+  position: absolute;
+  bottom: 242px;
+  left: 0;
+  z-index: 21;
+  width: $legendWidth;
+}
+
+#centeringButton {
+  position: relative;
+  margin-top: 25px;
+  margin-right: 20px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.leaflet-left .leaflet-control-zoom {
+  margin-left: 20px;
+}
+.leaflet-top .leaflet-control-zoom {
+  margin-top: 25px;
+}
+
+.descriptionAreaWrapper{
+  z-index: 99;
+  position: absolute;
+  height: $mapBottom;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  #levelControlWrapper {
+    display: block;
+    float: left;
+    padding: 1rem;
+    min-width: fit-content; //gets overwritten after rendering all child nodes (in levelControl.ts)
+
+    #levelControl {
+      flex-direction: column-reverse;
+      height: 190px;
+      margin-bottom: 0;
+
+      //fallback in case a building has a lot of levels
+      flex-wrap: wrap;
+
+      a.page-link {
+        text-align: center;
+      }
+
+      //overwrite default item radii
+      .page-item:first-child .page-link {
+        border-radius: 0 0 0.25rem 0.25rem;
+      }
+      .page-item:last-child .page-link {
+        border-radius: 0.25rem 0.25rem 0 0;
+      }
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+
+    #selectedBuilding {
+      color: $primary;
+      font-weight: 700;
+      margin-bottom: 0.5rem
+    }
+  }
+}
+
+#toastWrapper {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  z-index: 50;
+  @include media-breakpoint-down(md) {
+      top: 200px;
+  }
+}
+
+#descriptionArea {
+  font-size: 120%;
+  height: fit-content;
+}
+
+#changeUserProfileBtnLabel{
+  white-space: nowrap;
+}
+
+#map{
+  top: 56px;
+}
+
+@media screen and (max-width: 1469px){
+  #indoorSearchWrapper{
+    margin-top: 5px !important;
+  }
+}
+
+
+@media screen and (max-width: 1469px){
+  #map{
+    top: 107px !important;
+  }
+/*
+  #centeringButton{
+    top: 110px !important;
+  }*/
+}
+
+#buildingSearchWrapper, #indoorSearchWrapper {
+  width: 500px;
+}
+
+.hidden{
+  visibility: hidden;
+  width: 0 !important;
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.room-label {
+  margin-left: 0;
+
+  color: #000000;
+  background: rgba(255, 255, 255, 0.75);
+
+  border: none;
+  box-shadow: none;
+  /*text-shadow: 0 0 10px #000;*/
+
+  &:before{
+    content: none;
+  }
+}
+
+.leaflet-marker-pane img.leaflet-marker-icon {
+  box-shadow: 2px 2px 8px 0 #00000069;
+  border-radius: 8px;
+}
+
+.settings .modal-body .collection:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.more-less {
+  float: right;
+  color: #333;
+}
+
+//remove search X from input
+
+/* clears the 'X' from Internet Explorer */
+.hide-clear-icon::-ms-clear {  display: none; width : 0; height: 0; }
+.hide-clear-icon::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+.hide-clear-icon::-webkit-search-decoration,
+.hide-clear-icon::-webkit-search-cancel-button,
+.hide-clear-icon::-webkit-search-results-button,
+.hide-clear-icon::-webkit-search-results-decoration { display: none; }
+

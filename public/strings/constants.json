@@ -1,0 +1,38 @@
+{
+    "INDOOR_LEVEL": "0",
+    "FILL_OPACITY": "0.9",
+    "WALL_WEIGHT": "1",
+    "WALL_WEIGHT_PAVING": "3",
+    "OSM_TILE_SERVER": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "NOMINATIM_SERVER": "https://open.mapquestapi.com/nominatim/v1/search.php",
+    "MAPQUEST_API_KEY": "qjp4XJGBDGe98cl7QOPOgExZhNWX1lEx",
+    "OVERPASS_DATA_URLS": {
+        "INDOOR": "/overpass/indoor.json",
+        "BUILDINGS": "/overpass/buildings.json"
+    },
+    "MARKERS_IMG_DIR": "/images/",
+    "MAP_START_LAT": "51.0255439",
+    "MAP_START_LNG": "13.722780",
+    
+    "DEFAULT_BUILDING_SEARCH_STRING": "APB",
+    "OSM_ATTRIBUTION": "Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+    "COLORS": {
+        "WALL": "#000000",
+        "WALL_SELECTED": "#068288",
+        "TOILET": "#dfed64",
+        "STAIR": "#dddddd",
+        "ROOM": "#025558",
+        "ROOM_SELECTED": "#FF6F03"
+    },
+    "ICONS": {
+        "INFO": "information.svg",
+        "TOILETS_WHEELCHAIR": "toilets_wheelchair.svg",
+        "ELEVATOR": "elevator2_freepik.svg",
+        "WHEELCHAIR": "wheelchair.svg",
+        "TOILETS": "toilets.svg",
+        "ENTRANCE": "entrance.svg",
+        "EMERGENCY_EXIT": "emergency_exit.svg",
+        "STAIRS": "stairs.svg",
+        "ADDITIONAL": "additional.svg"
+    }
+}
