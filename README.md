@@ -1,7 +1,6 @@
-# Mapable: Accessible mobile map application
+# Mapable: An accessible mobile map application
 
-The project Accessible Maps aims to make indoor mobility more accessible for people with disabilities in the
-occupational context. This repository focuses on an app prototype for accessible mobile indoor map interaction called Mapable, made available under MIT license (see LICENSE file for further details).
+The project AccessibleMaps aims to make indoor mobility more accessible for people with disabilities in the occupational context. This repository focuses on an app prototype for accessible mobile indoor map interaction called Mapable, made available under MIT license (see LICENSE file for further details).
 
 Used technologies:
 
@@ -49,4 +48,5 @@ Free icon attributions:
 * https://freeicons.io/profile/5790
 * https://www.freepik.com
 * https://www.flaticon.com/
+
 See attribution files for further details.
